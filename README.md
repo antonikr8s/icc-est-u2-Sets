@@ -35,7 +35,7 @@ Este proyecto implementa un sistema en Java para demostrar el uso de distintas i
 
 ## 🖼️ Captura de Pantalla
 
-![Vista previa del proyecto](./Foto/Sets.png)
+![Vista previa del proyecto](src/Foto/Sets.png)
 
 ---
 
@@ -88,6 +88,7 @@ Laptop
 Celular
 Celulas
 Manzana
+
 ====TreeSetConComparadorInverso====
 Elementos del TreeSet con comparador inverso:
 Manzana
