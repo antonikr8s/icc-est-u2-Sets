@@ -6,7 +6,7 @@
 - **Asignatura:** Estructura de Datos  
 - **Carrera:** Computación  
 - **Estudiante:** Carlos Antonio Gordillo Tenemaza 
-- **Fecha:** 01/07/2025  
+- **Fecha:** 02/07/2025  
 - **Profesor:** Ing. Pablo Torres
 
 ---
@@ -36,6 +36,8 @@ Este proyecto implementa un sistema en Java para demostrar el uso de distintas i
 ## 🖼️ Captura de Pantalla
 
 ![Vista previa del proyecto](src/Foto/Sets.png)
+
+![Vista previa del proyecto](src/Foto/Contacto.png)
 
 ---
 
@@ -68,7 +70,7 @@ Celular
 Manzana
 
 ====LinkedHashSet====
-Elementos del LinkedHashSet (respeta el corden de insercion): 
+Elementos del LinkedHashSet (respeta el orden de insercion): 
 Laptop
 Manzana
 Pera
@@ -96,3 +98,18 @@ Celulas
 Celular
 Laptop
 Pera
+```
+```
+Contactos orden alfabetico apellido - nombre
+Nombre: Pedro, Apellido: Gonzales, Teléfono: 123456789
+Nombre: Pedro, Apellido: Lopez, Teléfono: 222222222
+Nombre: Ana, Apellido: Perez, Teléfono: 987654321
+Nombre: Luis, Apellido: Perez, Teléfono: 111111111
+
+Contactos orden alfabetico apellido - nombre - telefono (des)
+Nombre: Pedro, Apellido: Gonzales, Teléfono: 123456789
+Nombre: Pedro, Apellido: Lopez, Teléfono: 222222222
+Nombre: Pedro, Apellido: Lopez, Teléfono: 123456789
+Nombre: Ana, Apellido: Perez, Teléfono: 987654321
+Nombre: Luis, Apellido: Perez, Teléfono: 111111111
+```
