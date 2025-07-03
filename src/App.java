@@ -1,5 +1,6 @@
 
 import Controllers.ContactoController;
+import Controllers.Ejercicios;
 import Controllers.Sets;
 
 public class App {
@@ -15,14 +16,18 @@ public class App {
          * runTreeSetConComparadorInverso(sets);
          */
 
-        ContactoController contactoController = new ContactoController();
+        /*ContactoController contactoController = new ContactoController();
         System.out.println("Contactos orden alfabetico apellido - nombre");
         contactoController.runTreeContacto();
 
         System.out.println("");
 
         System.out.println("Contactos orden alfabetico apellido - nombre - telefono (des)");
-        contactoController.runTreeContactoConnumeroTacto();
+        contactoController.runTreeContactoConnumeroTacto();*/
+
+         // Ejercicios Propuestos
+        System.out.println("===== EJERCICIOS =====");
+        Ejercicios ejercicios = new Ejercicios();
 
     }
 

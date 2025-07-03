@@ -1,35 +1,34 @@
-# Práctica de Conjuntos en Java (HashSet, LinkedHashSet, TreeSet)
+# Proyecto: Ejercicios con Conjuntos (`Set`) en Java
 
 ## 📌 Información General
 
-- **Título:** Práctica de Conjuntos en Java  
+- **Proyecto:** Ejercicios con `HashSet` en Java  
 - **Asignatura:** Estructura de Datos  
 - **Carrera:** Computación  
-- **Estudiante:** Carlos Antonio Gordillo Tenemaza 
-- **Fecha:** 02/07/2025  
+- **Estudiante:** Carlos Antonio Gordillo Tenemaza  
+- **Fecha:** 03/07/2025  
 - **Profesor:** Ing. Pablo Torres
 
 ---
 
 ## 🛠️ Descripción
 
-Este proyecto implementa un sistema en Java para demostrar el uso de distintas implementaciones de la interfaz `Set` del lenguaje Java: `HashSet`, `LinkedHashSet`, `TreeSet`, `TreeSet` con comparador personalizado, y `TreeSet` con comparador inverso. El objetivo es observar cómo se comportan estos conjuntos respecto a duplicados y orden.
+Este proyecto contiene ejercicios prácticos que utilizan la clase `HashSet` de Java para trabajar con conjuntos. Los ejercicios se centran en la detección de duplicados, análisis de palabras y conteo de elementos únicos a partir de arreglos y texto.
+
+---
 
 ### 🔧 Componentes:
 
-- `Controllers.Sets`: contiene métodos que construyen diferentes tipos de `Set`:
-  - `construirHashSet()`
-  - `construirLinkedHashSet()`
-  - `construirTreeSet()`
-  - `construirTreeSetConComparador()` → ordena por longitud ascendente y luego alfabéticamente
-  - `construirTreeSetConComparadorInverso()` → ordena por longitud descendente y luego alfabéticamente inverso
+1. **`tieneDuplicado(int[] numeros)`**  
+   Verifica si un arreglo contiene números repetidos.
 
-- `App.java`: clase principal que ejecuta el programa llamando a los métodos estáticos:
-  - `runHashSet(Sets sets)`
-  - `runLinkedHashSet(Sets sets)`
-  - `runTreeSet(Sets sets)`
-  - `runTreeSetConComparador(Sets sets)`
-  - `runTreeSetConComparadorInverso(Sets sets)`
+2. **`esIsograma(String palabra)`**  
+   Determina si una palabra es un isograma (todas las letras son únicas).
+
+3. **`contarPalabrasUnicas(String frase)`**  
+   Cuenta cuántas palabras únicas hay en un texto largo, ignorando puntuación y mayúsculas/minúsculas.
+
+---
 
 ---
 
@@ -38,6 +37,8 @@ Este proyecto implementa un sistema en Java para demostrar el uso de distintas i
 ![Vista previa del proyecto](src/Foto/Sets.png)
 
 ![Vista previa del proyecto](src/Foto/Contacto.png)
+
+![Vista previa del proyecto](src/Foto/Ejercicios.png)
 
 ---
 
@@ -62,54 +63,15 @@ Para compilar y ejecutar el programa:
 ## 🧑‍💻 Ejemplo de Salida
 
 ```
-====HashSet====
-Elementos del HashSet(no se garantiza orden): 
-Laptop
-Pera
-Celular
-Manzana
+===== EJERCICIOS =====
+Ejercicio 1: Tiene duplicados
+Entrada [1, 2, 3, 4, 5] : false
+Entrada [1, 2, 3, 4, 5, 4, 3, 2, 45] : true
 
-====LinkedHashSet====
-Elementos del LinkedHashSet (respeta el orden de insercion): 
-Laptop
-Manzana
-Pera
-Celular
+Ejercicio 2: Palabra es Isograma
+murcielago es isograma: true
+camaleon es isograma: false
 
-====TreeSet====
-Elementos del TreeSet (orden alfabetico):
-Celular
-Laptop
-Manzana
-Pera
-
-====TreeSetConComparador====
-Elementos del TreeSet con comparador de longitud:
-Pera
-Laptop
-Celular
-Celulas
-Manzana
-
-====TreeSetConComparadorInverso====
-Elementos del TreeSet con comparador inverso:
-Manzana
-Celulas
-Celular
-Laptop
-Pera
-```
-```
-Contactos orden alfabetico apellido - nombre
-Nombre: Pedro, Apellido: Gonzales, Teléfono: 123456789
-Nombre: Pedro, Apellido: Lopez, Teléfono: 222222222
-Nombre: Ana, Apellido: Perez, Teléfono: 987654321
-Nombre: Luis, Apellido: Perez, Teléfono: 111111111
-
-Contactos orden alfabetico apellido - nombre - telefono (des)
-Nombre: Pedro, Apellido: Gonzales, Teléfono: 123456789
-Nombre: Pedro, Apellido: Lopez, Teléfono: 222222222
-Nombre: Pedro, Apellido: Lopez, Teléfono: 123456789
-Nombre: Ana, Apellido: Perez, Teléfono: 987654321
-Nombre: Luis, Apellido: Perez, Teléfono: 111111111
+Ejercicio 3: Total de palabras unicas
+Total de palabras unicas en el texto: 127
 ```
